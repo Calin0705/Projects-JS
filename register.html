@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/82949f6e5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <h1><a href="">
+                <span><i class="fa-solid fa-calendar-days"></i> Track</span
+                    >Time</a>
+            </h1>
+        </div>
+    </header>
+
+    <!-- Register form -->
+
+    <main>
+        <div class="registerForm">
+            <h2>Register</h2>
+            <form>
+                <div class="fieldForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="emailReg" required>
+                    <p id="emailRegisterError" class="error"></p>
+                </div>
+
+                <div class="fieldForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="userReg" required>
+                    <p id="userRegisterError" class="error"></p>
+                </div>
+
+                <div class="fieldForm">
+                    <label for="password">Password:</label>
+                    <input type="password" id="passwordReg" required>
+                    <p id="passwordRegError" class="error"></p>
+                </div>
+
+                <div class="fieldForm">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="fnameReg" required>
+                    <p id="fnameRegisterError" class="error"></p>
+                </div>
+
+                <div class="fieldForm">
+                    <label for="lasstname">Last Name:</label>
+                    <input type="text" id="lnameReg" required>
+                    <p id="lnameRegisterError" class="error"></p>
+                </div>
+
+                <div class="fieldForm">
+                    <label for="age">Age:</label>
+                    <input type="number" id="ageReg" required>
+                    <p id="ageRegisterError" class="error"></p>
+                </div>
+
+                <div class="buttons">
+                    <a href="login.html" class="btn">Return To Login</a>
+                    <button id="register" class="btn">Register</button>
+                </div>
+                <p class="bottom-text">
+                    By clicking the Register button, you agree to our
+                    <a href="#">Terms & Conditions</a> and
+                    <a href="#">Privacy Policy</a>
+                  </p>
+            </form>
+        </div>
+    </main>
+
+<!-- Footer -->
+    <footer>
+        <div class="navbar">
+            <div class="policy">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p>Copyright &copy; 2023 - TrackTime</p>
+        </div>
+        </footer>
+    <script src="./script/register.js"></script>
+</body>
+</html>

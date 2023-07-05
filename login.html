@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/82949f6e5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <h1><a href="">
+                <span><i class="fa-solid fa-calendar-days"></i> Track</span
+                    >Time</a>
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Login Form -->
+        <div class="login">
+            <form id="loginForm">
+                <h2>Log In</h2>
+                <div class="fieldForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="userSignIn" required>
+                    <p id="userSignInError" class="error"></p>
+                </div>
+
+                <div class="fieldForm">
+                    <label for="password">Password:</label>
+                    <input type="password" id="passwordSignIn" required>
+                    <p id="passwordSignInError" class="error"></p>
+                </div>
+
+                <div class="buttons">
+                    <button id="login" class="btn">Login</button>
+                    <a href="#" class="btn" id="reset">Reset Password</a>
+                </div>
+
+                 <!-- Display Error -->
+                <div id="loginError">Sign In failed: Incorrect username or/and password!</div>
+
+            </form>
+            <!-- Reset password form -->
+            <form id="resetForm">
+                <h2>Password Reset</h2>
+                <div class="fieldForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="userReset" required>
+                    <p id="resetError" class="error"></p>
+                </div>
+                <div class="buttons">
+                    <a href="login.html" class="btn">Return To Login</a>
+                    <button id="resetpass" class="btn">Reset Password</button>
+                </div>
+
+            </form>
+
+           
+            
+            <!-- To register form -->
+            <div class="register">
+                <p>Don't have an account?</p>
+                <a href="register.html">Register</a>
+            </div>
+        </div>
+    </main>
+
+<!-- Footer -->
+    <footer>
+        <div class="navbar">
+            <div class="policy">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p>Copyright &copy; 2023 - TrackTime</p>
+        </div>
+        </footer>
+    <script src="./script/login.js"></script>
+</body>
+</html>
